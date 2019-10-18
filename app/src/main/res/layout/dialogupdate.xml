@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTieudedialog1"
+        android:text="CẬP NHẬT MÓN"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textColor="#8A7AFA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:maxLength="50"
+        android:maxLines="1"
+        android:id="@+id/edtTendialog1"
+        android:layout_below="@id/txtTieudedialog1"
+        android:layout_margin="10dp"
+        android:hint="Tên Món"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:maxLength="50"
+        android:maxLines="1"
+        android:id="@+id/edtChitietDialog1"
+        android:layout_below="@id/edtTendialog1"
+        android:layout_margin="10dp"
+        android:inputType="text"
+        android:hint="Chi Tiết Món"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:maxLength="7"
+        android:maxLines="1"
+        android:id="@+id/edtGiaDialog1"
+        android:layout_below="@id/edtChitietDialog1"
+        android:layout_margin="10dp"
+        android:hint="Giá"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutdialog1"
+        android:layout_below="@id/edtGiaDialog1"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@drawable/custom_button"
+            android:id="@+id/btnCapNhatupdate"
+            android:text="Cập Nhật"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:background="@drawable/custom_button"
+            android:id="@+id/btnThoatCapNhatupdate"
+            android:text="Thoát"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgHinhDialog"
+        android:src="@drawable/coffee"
+        android:layout_below="@id/linearlayoutdialog1"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+</RelativeLayout>
